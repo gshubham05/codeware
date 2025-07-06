@@ -129,6 +129,12 @@ export default function Navbar() {
               <Link href="/blog">Blog</Link>
             </li>
             <li>
+              <Link href="/intern">Internship</Link>
+            </li>
+            <li>
+              <Link href="/Students">Students</Link>
+            </li>
+            <li>
               <Link
                 href="/contact"
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg hidden md:block"
@@ -160,7 +166,16 @@ export default function Navbar() {
                 Courses
               </Link>
             </li>
-
+            <li className="py-2 relative">
+              <Link href="/intern" onClick={toggleMobileMenu}>
+                Internship
+              </Link>
+            </li>
+            <li className="py-2 relative">
+              <Link href="/Students" onClick={toggleMobileMenu}>
+                Students
+              </Link>
+            </li>
             <li className="py-2">
               <Link href="/blog" onClick={toggleMobileMenu}>
                 Blog

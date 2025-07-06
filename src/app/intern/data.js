@@ -1,0 +1,71 @@
+const students = [
+  {
+    id: "shalini-bhatt",
+    name: "Shalini Bhatt ",
+    role: "Frontend Intern",
+    image: "/intern/shalini.jpeg",
+    college: "BTKIT Dwarahat",
+  },
+  {
+    id: "Shweta-Bhatt",
+    name: "Shweta Bhatt ",
+    role: "Frontend Intern",
+    image: "/intern/shewta.jpeg",
+    college: "Uttarakhand Technical University ",
+  },
+  {
+    id: "Vijaya-Mehta",
+    name: " Vijaya Mehta ",
+    role: "Flutter Developer Intern",
+    image: "/intern/Vijaya.jpeg",
+    college: "government polytechnic kaladhungi",
+  },
+  {
+    id: "Abhay-Pratap-Singh",
+    name: "Abhay Pratap Singh",
+    role: "React js intern",
+    image: "/intern/abhay.jpeg",
+    college:
+      "Shri ram murti smarak college of engineering and technology Bareilly",
+  },
+  {
+    id: "kanakpal-panwar",
+    name: "Kanakpal Panwar",
+    role: "Frontend Intern",
+    image: "/intern/kanak.jpg",
+    college: "government poltechnic chinyalisaur , uttarkashi",
+  },
+  {
+    id: "Divyanshu-Kandari",
+    name: "Divyanshu Kandari",
+    role: "MERN Stack Intern",
+    image: "/intern/divyanshu.jpeg",
+    college: "GBPUAT Pantnagar",
+  },
+  {
+    id: "Rohit-Negi",
+    name: "Rohit Negi",
+    role: "React Developer Intern",
+    image:
+      "https://ui-avatars.com/api/?name=Rohit+Negi&background=0D8ABC&color=fff",
+    college: "Graphic era hill university",
+  },
+  {
+    id: "Harsh-Singh",
+    name: "Harsh Singh",
+    role: "React.js Intern",
+    image:
+      "https://ui-avatars.com/api/?name=Harish+Singh&background=0D8ABC&color=fff",
+    college: "Uttranchal Institute Of Technology ",
+  },
+  {
+    id: "Abhinash-guleria",
+    name: "Abhinash guleria",
+    role: "Web Developer Intern",
+    image:
+      "https://ui-avatars.com/api/?name=Abhi+Guleria&background=0D8ABC&color=fff",
+    college: "LR Group of Institute ",
+  },
+];
+
+export default students;
