@@ -49,7 +49,7 @@ export default function About() {
   return (
     <div className="">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white py-24 text-center shadow-lg mt-[5rem]">
+      <div className="bg-gradient-to-r from-blue-800 to-purple-900  text-white py-24 text-center shadow-lg mt-[5rem]">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold drop-shadow-lg">
           About Us
         </h1>

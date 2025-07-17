@@ -25,7 +25,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className="bg-white shadow-md px-2 fixed top-0 left-0 w-full z-50"
+        className="bg-[#040A26] shadow-md px-2 fixed top-0 left-0 w-full z-50"
         onMouseLeave={() => handleMouseLeave("Courses")}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -41,7 +41,7 @@ export default function Navbar() {
               />
             </Link>
             <Link href="/">
-              <h1 className="text-2xl font-bold text-[#2563EB] cursor-pointer">
+              <h1 className="text-2xl font-bold text-white cursor-pointer">
                 CodewareIT
               </h1>
             </Link>
@@ -53,11 +53,16 @@ export default function Navbar() {
             className="md:hidden text-2xl"
             aria-label={isOpen ? "Close Menu" : "Open Menu"}
           >
-            {isOpen ? <FaTimes /> : <FaBars />} {/* Switches Icons */}
+            {isOpen ? (
+              <FaTimes className="text-white" />
+            ) : (
+              <FaBars className="text-white" />
+            )}{" "}
+            {/* Switches Icons */}
           </button>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-12 text-gray-600 items-center">
+          <ul className="hidden md:flex space-x-12 text-white items-center">
             <li>
               <Link href="/">Home</Link>
             </li>
@@ -75,7 +80,7 @@ export default function Navbar() {
                 className="flex items-center space-x-1 focus:outline-none"
               >
                 <span>Courses</span>
-                <FaChevronDown className="text-gray-500" />
+                <FaChevronDown className="text-white" />
               </Link>
               {openMenu === "Courses" && (
                 <div className="absolute mt-2 bg-white text-black shadow-lg rounded-lg w-80">

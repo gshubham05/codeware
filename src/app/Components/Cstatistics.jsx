@@ -26,7 +26,7 @@ const Statistics = () => {
   return (
     <div className="text-center py-14">
       {/* Heading Section */}
-      <h2 className="text-4xl font-bold text-gray-800">Our Achievements</h2>
+      <h2 className="text-4xl font-bold text-[#040A26]">Our Achievements</h2>
       <p className="text-lg text-gray-600 mt-2">
         Empowering learners with cutting-edge IT training and hands-on projects.
       </p>

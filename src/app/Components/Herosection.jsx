@@ -4,25 +4,24 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function HeroBanner() {
   return (
-    <section className="relative flex items-center justify-center h-[35rem] mt-[5rem] px-4 sm:px-6 sm:h-screen">
-      {/* Background Images */}
-      <div className="absolute inset-0">
-        {/* Desktop Background */}
-        <div
-          className="hidden md:block absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/hero.jpeg')" }}
-        ></div>
-        {/* Mobile Background */}
-        <div
-          className="block md:hidden absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/mobileimg.jpg')" }}
-        ></div>
-        {/* Dark Overlay for Readability */}
-        <div className="absolute inset-0 bg-blue-900 bg-opacity-60"></div>
-      </div>
+    <section className="relative flex items-center justify-center h-[35rem] mt-[5rem] px-4 sm:px-6 sm:h-screen overflow-hidden">
+      {/* Background Video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      >
+        <source src="/144590-785095798.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Dark Overlay for readability */}
+      <div className="absolute inset-0 bg-black bg-opacity-60 z-0" />
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-3xl mx-auto text-white px-4 md:px-8">
+      <div className="relative z-10 text-center max-w-3xl mx-auto text-white px-4 md:px-8 mt-[-3rem]">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
           Empower Your Future with <br />
           <span className="text-purple-300">
@@ -43,7 +42,7 @@ export default function HeroBanner() {
           and expert mentorship to launch your tech career!
         </p>
 
-        {/* Buttons */}
+        {/* Button */}
         <a
           href="https://wa.me/9837218345"
           target="_blank"

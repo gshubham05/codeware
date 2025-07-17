@@ -1,8 +1,9 @@
 import courseStudents from "../data";
 import { notFound } from "next/navigation";
 
-export default function CourseStudentProfile({ params }) {
-  const student = courseStudents.find((s) => s.id === params.id);
+export default async function CourseStudentProfile({ params }) {
+  const { id } = await Promise.resolve(params);
+  const student = courseStudents.find((s) => s.id === id);
   if (!student) return notFound();
 
   return (

@@ -1,6 +1,6 @@
 const students = [
   {
-    id: "shalini-bhatt",
+    id: "Shalini-Bhatt",
     name: "Shalini Bhatt ",
     role: "Frontend Intern",
     image: "/intern/shalini.jpeg",
@@ -21,6 +21,20 @@ const students = [
     college: "government polytechnic kaladhungi",
   },
   {
+    id: "Kashish-Lodh",
+    name: "Kashish Lodh",
+    role: "React js Intern",
+    image: "/intern/Kashish.jpeg",
+    college: "shivalik college of engineering",
+  },
+  {
+    id: "Prachi-Kudiyal",
+    name: "Prachi Kudiyal",
+    role: "React js Intern",
+    image: "/intern/Prachi.jpeg",
+    college: "shivalik college of engineering",
+  },
+  {
     id: "Abhay-Pratap-Singh",
     name: "Abhay Pratap Singh",
     role: "React js intern",
@@ -29,7 +43,7 @@ const students = [
       "Shri ram murti smarak college of engineering and technology Bareilly",
   },
   {
-    id: "kanakpal-panwar",
+    id: "kanak-pal",
     name: "Kanakpal Panwar",
     role: "Frontend Intern",
     image: "/intern/kanak.jpg",
@@ -41,6 +55,35 @@ const students = [
     role: "MERN Stack Intern",
     image: "/intern/divyanshu.jpeg",
     college: "GBPUAT Pantnagar",
+  },
+  {
+    id: "Dhruv-Dhiman",
+
+    name: "Dhruv Dhiman",
+    role: "MERN Stack Intern",
+    image: "/intern/Dhruv.jpeg",
+    college: "UPES Dehradun",
+  },
+  {
+    id: "Simran-Tomar",
+    name: "Simran Tomar",
+    role: "React.js Intern",
+    image: "/intern/simran.jpeg",
+    college: "shivalik college of engineering",
+  },
+  {
+    id: "Mohit-Bhatt",
+    name: "Mohit Bhatt",
+    role: "React.js Intern",
+    image: "/intern/mohit.jpeg",
+    college: "THDC IHET",
+  },
+  {
+    id: "Ashutosh-Raturi",
+    name: "Ashutosh Raturi",
+    role: "React.js Intern",
+    image: "/intern/ashu.jpeg",
+    college: "THDC-IHET Bhagirathi Puram Tehri Garhwal",
   },
   {
     id: "Rohit-Negi",

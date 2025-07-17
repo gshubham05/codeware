@@ -17,7 +17,7 @@ export default function InternshipHome() {
   );
 
   return (
-    <main className="bg-gradient-to-br from-blue-800 to-indigo-900 min-h-screen text-white mt-20">
+    <main className="bg-gradient-to-r from-blue-800 to-purple-900  min-h-screen text-white mt-20">
       {/* Hero */}
       <section className="text-center py-16 px-6">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -95,6 +95,31 @@ export default function InternshipHome() {
               </div>
             </Link>
           ))}
+          {currentPage === totalPages && (
+            <Link href="/apply">
+              <div className="relative group rounded-xl overflow-hidden shadow-xl transform hover:scale-105 transition-all duration-300 border-4">
+                {/* Full Image */}
+                <img
+                  src="/youarenext.jpeg"
+                  alt="You're Next!"
+                  className="w-full h-[26rem] object-cover group-hover:opacity-90 transition-opacity duration-300"
+                />
+
+                {/* Overlay Text */}
+                <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center px-4 text-center text-white">
+                  <h3 className="text-2xl md:text-3xl font-extrabold mb-2 animate-bounce">
+                    Next is You →
+                  </h3>
+                  <p className="text-base md:text-lg">
+                    Be the next intern at Codeware IT
+                  </p>
+                  <span className="mt-4 underline text-sm animate-pulse">
+                    Apply Now
+                  </span>
+                </div>
+              </div>
+            </Link>
+          )}
         </div>
 
         {/* Pagination Controls */}

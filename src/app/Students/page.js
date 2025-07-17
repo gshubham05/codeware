@@ -17,7 +17,7 @@ export default function CourseStudentsPage() {
   );
 
   return (
-    <main className="bg-gradient-to-br from-blue-800 to-indigo-900 min-h-screen text-white mt-20">
+    <main className="bg-gradient-to-r from-blue-800 to-purple-900  min-h-screen text-white mt-20">
       {/* Hero */}
       <section className="text-center py-16 px-6">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -34,9 +34,48 @@ export default function CourseStudentsPage() {
           </button>
         </Link>
       </section>
+      <section className=" bg-white text-black py-16 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+          {/* Left Content */}
+          <div>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+              Our Course Students
+            </h2>
+            <ul className="space-y-4 text-lg text-black/90">
+              <li className="flex items-start gap-2">
+                <span className="text-xl">✅</span> Completed Full Stack & MERN
+                Training
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-xl">✅</span> Built Real-World Projects
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-xl">✅</span> Gained Hands-on GitHub &
+                Deployment Skills
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-xl">✅</span> Mentored by Industry Experts
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-xl">✅</span> Received Internship
+                Certificates
+              </li>
+            </ul>
+          </div>
+
+          {/* Right Image */}
+          <div className="flex justify-center">
+            <img
+              src="/ChatGPT Image Jul 16, 2025, 11_39_01 PM.png"
+              alt="Course Students"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
 
       {/* Students Section with Pagination */}
-      <section className="py-16 px-6 bg-slate-900 text-white">
+      <section className="py-16 px-6 bg-gradient-to-r from-blue-800 to-purple-900  text-white">
         <h2 className="text-4xl font-extrabold text-center mb-4 tracking-tight">
           Meet Our <span className="text-purple-300">Course Students</span>
         </h2>
@@ -87,6 +126,31 @@ export default function CourseStudentsPage() {
               </div>
             </Link>
           ))}
+          {currentPage === totalPages && (
+            <Link href="/contact">
+              <div className="relative group rounded-xl overflow-hidden shadow-xl transform hover:scale-105 transition-all duration-300 border-4">
+                {/* Full Image */}
+                <img
+                  src="/youarenext.jpeg"
+                  alt="You're Next!"
+                  className="w-full h-[29rem] object-cover group-hover:opacity-90 transition-opacity duration-300"
+                />
+
+                {/* Overlay Text */}
+                <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center px-4 text-center text-white">
+                  <h3 className="text-2xl md:text-3xl font-extrabold mb-2 animate-bounce">
+                    Next is You →
+                  </h3>
+                  <p className="text-base md:text-lg">
+                    Start your journey with Codeware IT today
+                  </p>
+                  <span className="mt-4 underline text-sm animate-pulse">
+                    Apply Now
+                  </span>
+                </div>
+              </div>
+            </Link>
+          )}
         </div>
 
         {/* Pagination Controls */}

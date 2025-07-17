@@ -40,46 +40,40 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index); // Ensures only one is open at a time
+    setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <section className="max-w-6xl mx-auto py-12 px-6">
-      <div className="text-center">
-        <h2 className="text-3xl font-bold text-center mb-4">
+    <section className="max-w-6xl mx-auto py-16 px-6">
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-bold text-[#040A26]">
           Frequently Asked Questions
         </h2>
-        <p className="text-gray-500 text-center mb-6">
-          Find answers to common questions about our training programs at
-          Codeware IT Pvt Ltd.
+        <p className="text-gray-400 mt-2">
+          Everything you need to know about our training programs.
         </p>
       </div>
 
-      {/* 2 FAQs per row using Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="border border-gray-200 rounded-xl shadow-md"
+            className="rounded-2xl bg-gradient-to-br from-[#2D2A4A] to-[#5B496F] border border-[#5B496F] text-white shadow-lg"
           >
             <button
-              className="w-full flex justify-between items-center p-5 bg-blue-50 hover:bg-blue-100 text-left text-lg font-medium transition-all rounded-xl"
               onClick={() => toggleFAQ(index)}
-              aria-expanded={openIndex === index}
+              className="w-full flex justify-between items-center p-5 text-left text-lg font-medium focus:outline-none"
             >
-              <span className="text-gray-800">{faq.question}</span>
+              <span>{faq.question}</span>
               {openIndex === index ? (
-                <FaMinus className="text-blue-600" />
+                <FaMinus className="text-purple-400" />
               ) : (
-                <FaPlus className="text-blue-600" />
+                <FaPlus className="text-purple-400" />
               )}
             </button>
 
-            {/* Conditionally render the answer without affecting layout */}
             {openIndex === index && (
-              <div className="p-5 bg-white text-gray-700 border-t border-gray-200">
-                <p>{faq.answer}</p>
-              </div>
+              <div className="p-5 pt-0 text-sm text-gray-200">{faq.answer}</div>
             )}
           </div>
         ))}

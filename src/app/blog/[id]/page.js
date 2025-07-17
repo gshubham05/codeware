@@ -30,7 +30,7 @@ export default async function BlogPost({ params }) {
   }
 
   return (
-    <section className="max-w-4xl mx-auto px-4 py-16">
+    <section className="max-w-4xl mx-auto px-4 py-[5.3rem]">
       {/* Image with overlay text */}
       <div className="relative rounded-2xl overflow-hidden shadow-lg mb-8">
         {post.image && (
