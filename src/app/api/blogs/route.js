@@ -1,7 +1,7 @@
 // app/api/blogs/route.js
 import { NextResponse } from "next/server";
 import Blog from "../../models/Blog";
-import { connectDB } from "../lib/db";
+import { connectDB } from "../../lib/db";
 
 // GET - fetch all blogs
 export async function GET() {
