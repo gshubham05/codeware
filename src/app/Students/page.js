@@ -66,7 +66,7 @@ export default function CourseStudentsPage() {
           {/* Right Image */}
           <div className="flex justify-center">
             <img
-              src="/ChatGPT Image Jul 16, 2025, 11_39_01 PM.png"
+              src="/studentsLogo.png"
               alt="Course Students"
               className="w-full h-auto"
             />
