@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const BlogSchema = new mongoose.Schema(
+const blogSchema = new mongoose.Schema(
   {
     title: String,
     description: String,
@@ -13,5 +13,4 @@ const BlogSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// ✅ prevent model overwrite error
-export default mongoose.models.Blog || mongoose.model("Blog", BlogSchema);
+export default mongoose.models.Blog || mongoose.model("Blog", blogSchema);
