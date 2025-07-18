@@ -50,7 +50,7 @@ export default function InternshipHome() {
             </ul>
           </div>
           <img
-            src="ChatGPT Image Jul 4, 2025, 02_11_16 PM.png"
+            src="internLogo.png"
             alt="Learning"
             className="w-full h-auto"
           />
