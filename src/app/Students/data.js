@@ -37,7 +37,7 @@ const courseStudents = [
     id: "Kiran-chauhan",
     name: "Kiran Chauhan",
     role: "Mern Stack",
-    image: "/intern/Kiran.jpeg",
+    image: "/intern/kiran.jpeg",
     college: "Mahadevi institute of technology",
     placed: false,
   },
